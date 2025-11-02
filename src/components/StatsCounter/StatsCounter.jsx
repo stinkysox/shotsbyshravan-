@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer";
 import "./StatsCounter.css";
 
 const stats = [
-  { count: 48, label: "Wedding Shoots" },
-  { count: 36, label: "PreWedding Shoots" },
-  { count: 22, label: "Engagement Shoots" },
+  { count: 150, label: "Wedding Shoots" },
+  { count: 80, label: "PreWedding Shoots" },
+  { count: 70, label: "Engagement Shoots" },
   { count: 18, label: "Baby Shoots" },
   { count: 15, label: "Maternity Shoots" },
 ];
