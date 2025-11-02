@@ -1,0 +1,105 @@
+.form-section {
+  min-height: 100vh;
+  background-color: #f9f5f0; /* amber-50 */
+  color: #2e2e2e;
+  font-family: "Poppins", sans-serif;
+
+  padding: 2rem 1rem; /* form padding */
+}
+
+/* Container */
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-header h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: #2e2e2e;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-header p {
+  color: #666;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Form Fields */
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Grid for name/email/phone/date */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  padding: 0.75rem 0;
+  font-size: 1rem;
+  color: #2e2e2e;
+  transition: border-color 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-bottom-color: #444;
+}
+
+/* Disable textarea resize */
+.form-group textarea {
+  resize: none;
+}
+
+/* Button */
+.form-submit {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.form-submit button {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-submit button:hover {
+  background-color: #444;
+}
